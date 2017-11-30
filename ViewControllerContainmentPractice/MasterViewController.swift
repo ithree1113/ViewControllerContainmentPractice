@@ -14,14 +14,32 @@ class MasterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setupView()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    private func setupView() {
+        setupSegmentControl()
+    }
 
-
+    private func setupSegmentControl() {
+        segmentControl.removeAllSegments()
+        segmentControl.insertSegment(withTitle: "Summary", at: 0, animated: false)
+        segmentControl.insertSegment(withTitle: "Sessions", at: 1, animated: false)
+        segmentControl.addTarget(self, action: #selector(selectionDidChange(_:)), for: .valueChanged)
+        
+        segmentControl.selectedSegmentIndex = 0
+    }
+    
+    @objc func selectionDidChange(_ sender: UISegmentedControl) {
+        
+        // updateView()
+    }
+    
+    
 }
 
