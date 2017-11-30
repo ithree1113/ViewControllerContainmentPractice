@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MasterViewController.swift
 //  ViewControllerContainmentPractice
 //
 //  Created by i_eddiecheng on 2017/11/30.
@@ -8,8 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MasterViewController: UIViewController {
 
+    @IBOutlet weak var segmentControl: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

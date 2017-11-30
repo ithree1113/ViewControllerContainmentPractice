@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		FBBB53961FCFD9B000620CB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB53951FCFD9B000620CB2 /* AppDelegate.swift */; };
-		FBBB53981FCFD9B000620CB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB53971FCFD9B000620CB2 /* ViewController.swift */; };
+		FBBB53981FCFD9B000620CB2 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB53971FCFD9B000620CB2 /* MasterViewController.swift */; };
 		FBBB539B1FCFD9B000620CB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBB53991FCFD9B000620CB2 /* Main.storyboard */; };
 		FBBB539D1FCFD9B000620CB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBBB539C1FCFD9B000620CB2 /* Assets.xcassets */; };
 		FBBB53A01FCFD9B000620CB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBB539E1FCFD9B000620CB2 /* LaunchScreen.storyboard */; };
+		FBBB53A81FCFDE8900620CB2 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB53A71FCFDE8900620CB2 /* SummaryViewController.swift */; };
+		FBBB53AA1FCFDEC800620CB2 /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB53A91FCFDEC800620CB2 /* SessionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FBBB53921FCFD9B000620CB2 /* ViewControllerContainmentPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerContainmentPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBBB53951FCFD9B000620CB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBBB53971FCFD9B000620CB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBBB53971FCFD9B000620CB2 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		FBBB539A1FCFD9B000620CB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBBB539C1FCFD9B000620CB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBBB539F1FCFD9B000620CB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBBB53A11FCFD9B000620CB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBBB53A71FCFDE8900620CB2 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		FBBB53A91FCFDEC800620CB2 /* SessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				FBBB53951FCFD9B000620CB2 /* AppDelegate.swift */,
-				FBBB53971FCFD9B000620CB2 /* ViewController.swift */,
+				FBBB53971FCFD9B000620CB2 /* MasterViewController.swift */,
+				FBBB53A71FCFDE8900620CB2 /* SummaryViewController.swift */,
+				FBBB53A91FCFDEC800620CB2 /* SessionsViewController.swift */,
 				FBBB53991FCFD9B000620CB2 /* Main.storyboard */,
 				FBBB539C1FCFD9B000620CB2 /* Assets.xcassets */,
 				FBBB539E1FCFD9B000620CB2 /* LaunchScreen.storyboard */,
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBBB53981FCFD9B000620CB2 /* ViewController.swift in Sources */,
+				FBBB53981FCFD9B000620CB2 /* MasterViewController.swift in Sources */,
+				FBBB53AA1FCFDEC800620CB2 /* SessionsViewController.swift in Sources */,
 				FBBB53961FCFD9B000620CB2 /* AppDelegate.swift in Sources */,
+				FBBB53A81FCFDE8900620CB2 /* SummaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
