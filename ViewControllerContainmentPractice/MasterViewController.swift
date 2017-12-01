@@ -76,6 +76,18 @@ class MasterViewController: UIViewController {
     
     private func setupView() {
         setupSegmentControl()
+        
+        updateView()
+    }
+    
+    private func updateView() {
+        if segmentControl.selectedSegmentIndex == 0 {
+            remove(asChildViewController: sessionsViewController)
+            add(asChildViewController: summaryViewController)
+        } else {
+            remove(asChildViewController: summaryViewController)
+            add(asChildViewController: sessionsViewController)
+        }
     }
 
     private func setupSegmentControl() {
@@ -89,7 +101,7 @@ class MasterViewController: UIViewController {
     
     @objc func selectionDidChange(_ sender: UISegmentedControl) {
         
-        // updateView()
+         updateView()
     }
     
     
