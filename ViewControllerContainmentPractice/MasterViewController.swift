@@ -12,6 +12,47 @@ class MasterViewController: UIViewController {
 
     @IBOutlet weak var segmentControl: UISegmentedControl!
     
+    private lazy var summaryViewController: SummaryViewController = {
+        // Load Storyboard
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        
+        // Instantiate View Controller
+        var viewController = storyboard.instantiateViewController(withIdentifier: "SummaryViewController") as! SummaryViewController
+        
+        // Add View Controller as Child View Controller
+        self.add(asChildViewController: viewController)
+        
+        return viewController
+    }()
+    
+    private lazy var sessionsViewController: SessionsViewController = {
+        // Load Storyboard
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        
+        // Instantiate View Controller
+        var viewcontroller = storyboard.instantiateViewController(withIdentifier: "SessionsViewController") as! SessionsViewController
+        
+        // Add View Controller as Child View Controller
+        self.add(asChildViewController: viewcontroller)
+        
+        return viewcontroller
+    }()
+    
+    private func add(asChildViewController viewController: UIViewController) {
+        // Add Child View Controller
+        self.addChildViewController(viewController)
+        
+        // Add Child View as Subview
+        self.view.addSubview(viewController.view)
+        
+        // Configure Child View
+        viewController.view.bounds = self.view.bounds
+        viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        // Notify Child View Controller
+        viewController.didMove(toParentViewController: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
