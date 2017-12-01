@@ -21,6 +21,17 @@ class SessionsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        print("Sessions View Controller Will Appear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        print("Sessions View Controller Will Disappear")
+    }
 
     /*
     // MARK: - Navigation

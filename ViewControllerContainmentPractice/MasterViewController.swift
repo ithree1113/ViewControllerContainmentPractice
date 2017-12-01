@@ -100,10 +100,8 @@ class MasterViewController: UIViewController {
     }
     
     @objc func selectionDidChange(_ sender: UISegmentedControl) {
-        
          updateView()
     }
-    
     
 }
 
