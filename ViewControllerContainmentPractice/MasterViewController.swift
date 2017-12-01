@@ -53,6 +53,17 @@ class MasterViewController: UIViewController {
         viewController.didMove(toParentViewController: self)
     }
     
+    private func remove(asChildViewController viewController: UIViewController) {
+        // Notify Child View Controller
+        viewController.willMove(toParentViewController: nil)
+        
+        // Remove Child View From Superview
+        viewController.view.removeFromSuperview()
+        
+        // Notify Child View Controller
+        viewController.removeFromParentViewController()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
